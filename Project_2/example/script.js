@@ -116,10 +116,10 @@ function draw(error,data){
     var plotDots = plot1.select('.todayWeather')
         .append("g")
         .attr("class","dots");
-    //
-    // var plotNumbers = plot1.select('.todayWeather')
-    //     .append("g")
-    //     .attr("class","numbers");
+//    
+//     var plotNumbers = plot1.select('.todayWeather')
+//         .append("g")
+//         .attr("class","numbers");
 
     plotDots
         .selectAll(".weatherDots")
@@ -130,16 +130,16 @@ function draw(error,data){
         .attr("cx",function(d) { return scaleX1(new Date (d.time*1000)); })
         .attr("cy",function(d) { return scaleY1(d.temperature); })
         .attr("r",3);
-    //
-    // plotNumbers
-    //     .selectAll(".weatherNumbers")
-    //     .data(data24h) //select the data
-    //     .enter()
-    //     .append("text")
-    //     .attr("class", "weatherNumbers") // this is the same class that we have selected before
-    //     .text(function(d){return d.temperature})
-    //     .attr("x",function(d) { return scaleX1(new Date (d.time*1000)); })
-    //     .attr("y",function(d) { return scaleY1(d.temperature); });
+    
+//     plotNumbers
+//         .selectAll(".weatherNumbers")
+//         .data(data24h) //select the data
+//         .enter()
+//         .append("text")
+//         .attr("class", "weatherNumbers") // this is the same class that we have selected before
+//         .text(function(d){return d.temperature})
+//         .attr("x",function(d) { return scaleX1(new Date (d.time*1000)); })
+//         .attr("y",function(d) { return scaleY1(d.temperature); });
 
     d3.select("#date").html(formatDate(extentdata24h[0]))
 
