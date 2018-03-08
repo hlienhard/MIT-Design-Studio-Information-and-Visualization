@@ -106,7 +106,7 @@ function background1(){
     if (icon == "rain" ) {
        return "rain.png"; 
     }
-    if (icon == "snow" && hour >= 17){
+    if (icon == "snow" && hour >= 17, hour < 6){
         return "nightsnow.png";
     }
     if (icon == "snow" && hour <= 16){
@@ -115,26 +115,26 @@ function background1(){
     if (icon == "sunny" && hour <= 16){
     return  "clearday.png";
 }
-    if (icon == "sunny" && hour >= 17 ){
+    if (icon == "sunny" && hour >= 17, hour < 6 ){
     return  "clearnight.png";
 }
     
     if (icon == "cloudy" && hour <= 16){
     return  "clearday.png";
 }
-    if (icon == "cloudy" && hour >= 17){
+    if (icon == "cloudy" && hour >= 17, hour < 6){
      return  "clearnight.png";
 }
     if (icon == "partly-cloudy" && hour <= 16){
     return  "clearday.png";
 }
-    if (icon == "partly-cloudy" && hour >= 17){
+    if (icon == "partly-cloudy" && hour >= 17, hour < 6){
      return  "clearnight.png";
 }
      if (icon == "wind" && hour <= 16){
      return  "clearday.png";
 }
-     if (icon == "wind" && hour >= 17){
+     if (icon == "wind" && hour >= 17, hour < 6){
      return  "clearnight.png";
 }
 }
