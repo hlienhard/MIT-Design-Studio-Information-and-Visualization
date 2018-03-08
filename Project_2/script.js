@@ -143,19 +143,19 @@ function bird(){
 }
 function birdpos(){
     if (humid <= 0.6 && humid >= 0.4){
-        return "position: absolute; top: 253px; left: 625px";
+        return "position: relative; bottom: 675px; left: 200px;";
     }
     else if (humid <= 0.4 && humid >= 0.2){
-        return "position: absolute; top: 247px; left: 565px;";
+        return "position: relative; bottom: 680px; left: 140px;";
     }
     else if (humid <= 0.2 && humid >= 0.0){
-        return "position: absolute; top: 242px; left: 515px";
+        return "position: relative; bottom: 685px; left: 90px;";
     }
     else if (humid <= 0.8 && humid >= 0.6){
-        return "position: absolute; top: 260px; left: 685px";
+        return "position: relative; bottom: 670px; left: 260px;";
     }
     else if (humid <= 1 && humid >= 0.8){
-        return "position: absolute; top: 265px; left: 745px;";
+        return "position: relative; bottom: 665px; left: 325px;";
     }
 }
 
