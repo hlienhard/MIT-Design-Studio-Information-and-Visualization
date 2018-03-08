@@ -10,10 +10,11 @@ var date = new Date();
     var day = date.getDay();
 
 function draw(error,data){
-//console.log(data);
+console.log(data);
 var daily = (data).daily;
-    icon = daily.data[0].icon;
-    temp = daily.data[0].apparentTemperatureHigh;
+var hourly = (data).hourly;
+    icon = hourly.data[0].icon;
+    temp = hourly.data[0].temperature;
     temp = Math.round(temp);
     temp3 = daily.data[1].apparentTemperatureHigh;
     temp3 = Math.round(temp3);
