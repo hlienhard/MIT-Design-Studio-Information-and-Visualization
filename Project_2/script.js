@@ -105,6 +105,7 @@ var hourly = (data).hourly;
     document.getElementById("temp8").style = today6();
 }
 
+<<<<<<< HEAD
 function background1(){
     if (icon == "rain" ) {
        return "rain.png"; 
@@ -180,6 +181,10 @@ function background2(){
     else {
     return  "warmflower.png";
 }
+=======
+function draw(error,data){
+    console.log(data);
+>>>>>>> upstream/master
 }
 
 
