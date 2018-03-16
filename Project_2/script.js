@@ -28,6 +28,8 @@ var hourly = (data).hourly;
     temp7 = Math.round(temp7);
     temp8 = daily.data[6].apparentTemperatureHigh;
     temp8 = Math.round(temp8);
+//    temp9 = daily.data[4].apparentTemperatureHigh;
+//    temp9 = Math.round(temp9);
     humid = daily.data[0].humidity;
     
 
@@ -60,14 +62,15 @@ var hourly = (data).hourly;
     document.getElementById("precip4").innerHTML = precip4.toString()+ "%";
     document.getElementById("precip5").innerHTML = precip5.toString()+ "%";
     document.getElementById("precip6").innerHTML = precip6.toString()+ "%";
-    document.getElementById("temp").innerHTML = temp.toString() + "º";
-    document.getElementById("temp2").innerHTML = temp.toString()+ "º";
-    document.getElementById("temp3").innerHTML = temp3.toString()+ "º";
-    document.getElementById("temp4").innerHTML = temp4.toString()+ "º";
-    document.getElementById("temp5").innerHTML = temp5.toString()+ "º";
-    document.getElementById("temp6").innerHTML = temp6.toString()+ "º";
-    document.getElementById("temp7").innerHTML = temp7.toString()+ "º";
-    document.getElementById("temp8").innerHTML = temp8.toString()+ "º";
+    document.getElementById("temp").innerHTML = temp.toString() + "ºF";
+    document.getElementById("temp2").innerHTML = temp.toString()+ "ºF";
+    document.getElementById("temp3").innerHTML = temp3.toString()+ "ºF";
+    document.getElementById("temp4").innerHTML = temp4.toString()+ "ºF";
+    document.getElementById("temp5").innerHTML = temp5.toString()+ "ºF";
+    document.getElementById("temp6").innerHTML = temp6.toString()+ "ºF";
+    document.getElementById("temp7").innerHTML = temp7.toString()+ "ºF";
+    document.getElementById("temp8").innerHTML = temp8.toString()+ "ºF";
+//    document.getElementById("temp9").innerHTML = temp9.toString()+ "ºF";
     document.getElementById("image").src = background1();
     document.getElementById("bird").src = bird();
     document.getElementById("image2").src = background2();
@@ -180,22 +183,22 @@ function background2(){
 }
 
 
-var Mon = "Mon";
-var Tue = "Tue";
-var Wed = "Wed";
-var Thu = "Thu";
-var Fri = "Fri";
-var Sat = "Sat";
-var Sun = "Sun";
+var Mon = "Monday";
+var Tue = "Tuesday";
+var Wed = "Wednesday";
+var Thu = "Thursday";
+var Fri = "Friday";
+var Sat = "Saturday";
+var Sun = "Sunday";
 
 
 
 function today1(){
     if (day == 1){
-        return "font-size: 18pt; color: black; text-transform: uppercase;font-weight: bold; font-family:Century Gothic";
+        return "color: black; text-transform: uppercase;font-weight: bold; font-family:Century Gothic";
 }
     else{
-        return "font-size: 18pt; color: black; text-transform: capitalize;";
+        return "color: black; text-transform: capitalize;";
     }
 }
 function today2(){
@@ -203,7 +206,7 @@ function today2(){
         return "font-size: 18pt; color: black; text-transform: uppercase;font-weight: bold;font-family:Century Gothic";
 }
     else{
-        return "font-size: 18pt; color: black; text-transform: capitalize;";
+        return " color: black; text-transform: capitalize;";
     }
 }
 function today3(){
@@ -211,23 +214,23 @@ function today3(){
         return "font-size: 18pt; color: black; text-transform: uppercase;font-weight: bold;font-family:Century Gothic";
 }
     else{
-        return "font-size: 18pt; color: black; text-transform: capitalize;";
+        return "color: black; text-transform: capitalize;";
     }
 }
 function today4(){
     if (day == 4){
-        return "font-size: 18pt; color: black; text-transform: uppercase;font-weight: bold;font-family:Century Gothic";
+        return "font-size: 18pt; color: black; font-weight: bold;font-family:Century Gothic";
 }
     else{
-        return "font-size: 18pt; color: black; text-transform: capitalize;";
+        return "color: black; text-transform: capitalize;";
     }
 }
 function today5(){
     if (day == 5){
-        return "font-size: 18pt; color: black; text-transform: uppercase;font-weight: bold;font-family:Century Gothic";
+        return "font-size: 18pt; color: black; font-weight: bold;font-family:Century Gothic";
 }
     else{
-        return "font-size: 18pt; color: black; text-transform: capitalize;";
+        return "color: black; text-transform: capitalize;";
     }
 }
 function today6(){
@@ -235,7 +238,7 @@ function today6(){
         return "font-size: 18pt; color: black; text-transform: uppercase;font-weight: bold;font-family:Century Gothic";
 }
     else{
-        return "font-size: 18pt; color: black; text-transform: capitalize;";
+        return "color: black; text-transform: capitalize;";
     }
 }
 function today7(){
@@ -243,8 +246,14 @@ function today7(){
         return "font-size: 18pt; color: black; text-transform: uppercase;font-weight: bold;font-family:Century Gothic";
 }
     else{
-        return "font-size: 18pt; color: black; text-transform: capitalize;";
+        return "color: black; text-transform: capitalize;";
     }
 }
 
-    
+//var c=document.getElementById("mobile2");
+//var ctx=c.getContext("2d");
+//ctx.beginPath();
+//ctx.moveTo(0,0);
+//ctx.lineTo(300,150);
+//ctx.stroke();
+//

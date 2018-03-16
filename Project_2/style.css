@@ -30,6 +30,7 @@ body {
     z-index: 1;
     width: 100px;
     height: 70px;
+    font-family: "Century Gothic";
 }
 
 
@@ -51,10 +52,37 @@ body {
 }
 
 
+/*
+.temptop {
+    position:relative;
+    bottom: 1660px;
+    left: 120px;
+    color: black;
+    font-size: 25pt;
+    width: 60px;
+    height: 50px;
+    font-family: "Century Gothic";
+}
+*/
+
+
+.Degree {position: relative;
+    bottom: 358.5px;
+    left: 166px;
+    font-size: 12pt;
+    color: black;
+    z-index: 1;
+    width: 60px;
+    height: 25px;
+    font-family: "Century Gothic";
+/*    font-weight: bold;*/
+}
+
+
 .temp2 {position: relative;
-    bottom: 333px;
+    bottom: 363px;
     left: 193px;
-    font-size: 18pt;
+    font-size: 15pt;
     color: black;
     z-index: 1;
     width: 60px;
@@ -63,9 +91,9 @@ body {
 }
 
 .temp3 {position: relative;
-    bottom: 333px;
+    bottom: 363px;
     left: 193px;
-    font-size: 18pt;
+    font-size: 15pt;
     color: black;
     z-index: 1;
     width: 60px;
@@ -74,9 +102,9 @@ body {
 }
 
 .temp4 {position: relative;
-    bottom: 333px;
+    bottom: 363px;
     left: 193px;
-    font-size: 18pt;
+    font-size: 15pt;
     color: black;
     z-index: 1;
     width: 60px;
@@ -85,9 +113,9 @@ body {
 }
 
 .temp5 {position: relative;
-    bottom: 333px;
+    bottom: 363px;
     left: 193px;
-    font-size: 18pt;
+    font-size: 15pt;
     color: black;
     z-index: 1;
     width: 60px;
@@ -96,9 +124,9 @@ body {
 }
 
 .temp6 {position: relative;
-    bottom: 333px;
+    bottom: 363px;
     left: 193px;
-    font-size: 18pt;
+    font-size: 15pt;
     color: black;
     z-index: 1;
     width: 60px;
@@ -107,9 +135,9 @@ body {
 }
 
 .temp7 {position: relative;
-    bottom: 333px;
+    bottom: 363px;
     left: 193px;
-    font-size: 18pt;
+    font-size: 15pt;
     color: black;
     z-index: 1;
     width: 60px;
@@ -118,9 +146,9 @@ body {
 }
 
 .temp8 {position: relative;
-    bottom: 333px;
+    bottom: 363px;
     left: 193px;
-    font-size: 18pt;
+    font-size: 15pt;
     color: black;
     z-index: 1;
     width: 60px;
@@ -129,10 +157,23 @@ body {
     
 }
 
+.Percent {position: relative;
+    bottom: 686px;
+    left: 287px;
+    font-size: 12pt;
+    color: black;
+    z-index: 3;
+    width: 60px;
+    height: 25px;
+    font-family: "Century Gothic";
+/*    font-weight: bold;*/
+}
+
+
 .precip {position: relative;
-    bottom: 622px;
-    left: 310px;
-    font-size: 18pt;
+    bottom: 692px;
+    left: 314px;
+    font-size: 15pt;
     color: black;
     z-index: 3;
     width: 60px;
@@ -140,9 +181,9 @@ body {
     font-family: "Century Gothic";
 }
 .precip1 {position: relative;
-    bottom: 622px;
-    left: 310px;
-    font-size: 18pt;
+    bottom: 692px;
+    left: 314px;
+    font-size: 15pt;
     color: black;
     z-index: 3;
     width: 60px;
@@ -150,9 +191,9 @@ body {
     font-family: "Century Gothic";
 }
 .precip2 {position: relative;
-    bottom: 622px;
-    left: 310px;
-    font-size: 18pt;
+    bottom: 692px;
+    left: 314px;
+    font-size: 15pt;
     color: black;
     z-index: 3;
     width: 60px;
@@ -160,9 +201,9 @@ body {
     font-family: "Century Gothic";
 }
 .precip3 {position: relative;
-    bottom: 622px;
-    left: 310px;
-    font-size: 18pt;
+    bottom: 692px;
+    left: 314px;
+    font-size: 15pt;
     color: black;
     z-index: 3;
     width: 60px;
@@ -170,9 +211,9 @@ body {
     font-family: "Century Gothic";
 }
 .precip4 {position: relative;
-    bottom: 622px;
-    left: 310px;
-    font-size: 18pt;
+    bottom: 692px;
+    left: 314px;
+    font-size: 15pt;
     color: black;
     z-index: 3;
     width: 60px;
@@ -180,9 +221,9 @@ body {
     font-family: "Century Gothic";
 }
 .precip5 {position: relative;
-    bottom: 622px;
-    left: 310px;
-    font-size: 18pt;
+    bottom: 692px;
+    left: 314px;
+    font-size: 15pt;
     color: black;
     z-index: 3;
     width: 60px;
@@ -190,9 +231,9 @@ body {
     font-family: "Century Gothic";
 }
 .precip6 {position: relative;
-    bottom: 622px;
-    left: 310px;
-    font-size: 18pt;
+    bottom: 692px;
+    left: 314px;
+    font-size: 15pt;
     color: black;
     z-index: 3;
     width: 60px;
@@ -200,10 +241,23 @@ body {
     font-family: "Century Gothic";
 }
 
+.Day {position: relative;
+    bottom: 1015px;
+    left: 30px;
+    font-size: 12pt;
+    color: black;
+    z-index: 1;
+    width: 200px;
+    height: 25px;
+    font-family: "Century Gothic";
+/*    font-weight: bold;*/
+}
+
+
 .Sun {position: relative;
-    bottom: 908px;
-    left: 60px;
-    font-size: 18pt;
+    bottom: 1020px;
+    left: 35px;
+    font-size: 15pt;
     color: black;
     z-index: 1;
     width: 60px;
@@ -212,9 +266,9 @@ body {
 }
 
 .Mon {position: relative;
-    bottom: 908px;
-    left: 60px;
-    font-size: 18pt;
+    bottom: 1020px;
+    left: 35px;
+    font-size: 15pt;
     color: black;
     z-index: 1;
     width: 60px;
@@ -223,9 +277,9 @@ body {
 }
 
 .Tue {position: relative;
-    bottom: 908px;
-    left: 60px;
-    font-size: 18pt;
+    bottom: 1020px;
+    left: 35px;
+    font-size: 15pt;
     color: black;
     z-index: 1;
     width: 60px;
@@ -233,9 +287,9 @@ body {
     font-family: "Century Gothic";
 }
 .Wed {position: relative;
-    bottom: 908px;
-    left: 60px;
-    font-size: 18pt;
+    bottom: 1020px;
+    left: 35px;
+    font-size: 15pt;
     color: black;
     z-index: 1;
     width: 60px;
@@ -243,9 +297,9 @@ body {
     font-family: "Century Gothic";
 }
 .Thu {position: relative;
-    bottom: 908px;
-    left: 60px;
-    font-size: 18pt;
+    bottom: 1020px;
+    left: 35px;
+    font-size: 15pt;
     color: black;
     z-index: 1;
     width: 60px;
@@ -253,9 +307,9 @@ body {
     font-family: "Century Gothic";
 }
 .Fri {position: relative;
-    bottom: 908px;
-    left: 60px;
-    font-size: 18pt;
+    bottom: 1020px;
+    left: 35px;
+    font-size: 15pt;
     color: black;
     z-index: 1;
     width: 60px;
@@ -263,9 +317,9 @@ body {
     font-family: "Century Gothic";
 }
 .Sat {position: relative;
-    bottom: 908px;
-    left: 60px;
-    font-size: 18pt;
+    bottom: 1020px;
+    left: 35px;
+    font-size: 15pt;
     color: black;
     z-index: 1;
     width: 60px;
@@ -273,3 +327,9 @@ body {
     font-family: "Century Gothic";
 }
 
+.Line {position: relative;
+    bottom:1336px;
+    left: 29px;
+    width: 200px;
+    height: 10px;
+}
