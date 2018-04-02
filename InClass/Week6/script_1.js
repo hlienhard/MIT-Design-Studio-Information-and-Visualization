@@ -19,17 +19,37 @@ var queue = d3.queue()
     .await(dataloaded);
 
 function dataloaded (err,data,map){
-
+console.log(data)
+    consol.log(map)
     // get max and min values of data
-
+var extentData = d3.extent(data, function(d) {return d.total});
+var colorScale = d3.scaleLinear().domain(extentData).range(["#ffc5c0","#ab0405"]);
     // scale Color for the map
 
     // Bind the data to the SVG and create one path per GeoJSON feature
+plot1.selectAll(".state")
+    .data(topojson.deature(map,map.objects.states))
+    .enter()  
+    .attr("d",path)                                                        
+    .attr("class","state")         
+    .style("fill",function(d){
+           var mapID = +d.id;
+           var color;
+           data.forEach(function(e){
+        if(e.id === madID){
+            color = colorSclae(e.total)
+        }
+    })
+    return color
+           }
 
-}
 
 
 
 function parseData(d){
-
+    var id = (d.id).split("US")[1];
+}
+return {
+    id: +id;
+    
 }
