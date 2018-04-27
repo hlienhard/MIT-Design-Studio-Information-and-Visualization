@@ -65,9 +65,37 @@ var path4 = d3.arc()
     .outerRadius(radius - 10)
     .innerRadius(0);
 
+
+var typeDispatch = d3.dispatch('changePie');
+
+var valuesPie = [{value:"18 to 24 years",n:0},{value:"25 to 29 years",n:1},{value:"30 to 34 years",n:2}];
+
+valuesPie.forEach(function(d){
+        d3.select(".values-list")
+            .append("option")
+            .html(d.value)
+            .attr("value", d.value);
+    }); 
+     d3.select(".values-list").on("change", function () {typeDispatch.call("changePie", this, this.value);});
+
+var showPie = "18 to 24 years";
+
+
+
 d3.csv("data/Education/Educational_Attainment_of_the_Population_2017.csv", function(d) {
-  d = d.filter(function(row) { return row.Age == "..18 to 24 years" });
-    
+  
+    typeDispatch.on("changePie",function(type,i){
+        showPie = type;
+        // update element and functions according to the type selected
+        if (showPie === "18 to 24 years"){
+            d = d.filter(function(row) { return row.Age == "18 to 24 years" });
+        }else if (showPie === "25 to 29 years"){
+            d = d.filter(function(row) { return row.Age == "25 to 29 years" });
+        }else if (showPie === "30 to 34 years"){
+            d = d.filter(function(row) { return row.Age == "30 to 34 years" });
+        }
+        arc0();
+ })
     var arc0 = g.selectAll(".arc")
     .data(pie(d))
     .enter().append("g")
@@ -87,34 +115,7 @@ d3.csv("data/Education/Educational_Attainment_of_the_Population_2017.csv", funct
       .attr("d", path1)
       .attr("fill", function(d) { return color(d.data.Sex) })
       .style('stroke-width', 0);
-   
-//    var node = plot1_svg.selectAll(".pie")
-//      .on("mouseover", function (d) {
-//            tooltip.html(d.state + "<br/>" + d.total + "%");
-//
-//            return tooltip.style("visibility", "visible")
-//        })
-//        .on("mousemove", function () {
-//            return tooltip
-//                .style("top", (d3.event.pageY - 10) + "px")
-//                .style("left", (d3.event.pageX + 10) + "px");
-//        })
-//        .on("mouseout", function () {
-//            return tooltip.style("visibility", "hidden");
-//        })
-//        .style("cursor", "pointer");
-     
-//   node.append("text")
-//        .attr("text-anchor", "middle")
-//        .text(function (d) {
-//            return d.stateAbbr;
-//        })
-//        .style("transform", "translate(0px, 4px)");
-//
-//    var tooltip = plot1.append("div")
-//        .attr("class", "tooltip") 
-//    
-//    
+  
     var arc2 = g2.selectAll(".arc")
     .data(pie2(d))
     .enter().append("g")
@@ -144,44 +145,10 @@ d3.csv("data/Education/Educational_Attainment_of_the_Population_2017.csv", funct
       .attr("d", path4)
       .attr("fill", function(d) { return color(d.data.Sex) })
       .style('stroke-width', 0);
-    });
-    
-    var valuesPlot1 = [{value:"18 to 24 years",n:0},{value:"25 to 29 years",n:1},{value:"30 to 34 years",n:2}];
+   
 
-    // append options to the html element
-    valuesPlot1.forEach(function(d){
-        var plus = " (By household)";
-
-        if(d.value === "Member income"){
-            plus = " (By member)"
-        }
-        d3.select(".values-list")
-            .append("option")
-            .html(d.value + plus)
-            .attr("value", d.value);
     });
 
-    // when the html element changes, call event
-    d3.select(".values-list").on("change", function () {typeDispatch.call("changePlot1", this, this.value);});
-
-
-
- typeDispatch.on("changePlot1",function(type,i){
-        
-        showPlot1 = type;
-
-        // update element and functions according to the type selected
-        if (showPlot1 === "18 to 24 years"){
-            scaleYAge =  scaleYAge.domain([0,maxMemberIncome]);
-            lineAge = lineAge.y(function(d) { return scaleYAge(d.member_income); })
-        }else if (showPlot1 === "25 to 29 years"){
-            scaleYAge =  scaleYAge.domain([0,maxMedianIncome]);
-            lineAge = lineAge.y(function(d) { return scaleYAge(d.median_income); })
-        }else if (showPlot1 === "30 to 34 years"){
-            scaleYAge =  scaleYAge.domain([0,maxMeanIncome]);
-            lineAge = lineAge.y(function(d) { return scaleYAge(d.mean_income); })
-        }
- })
 
 function dots(){
     return "dot template.png";
