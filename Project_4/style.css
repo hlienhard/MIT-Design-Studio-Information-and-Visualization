@@ -1,0 +1,76 @@
+body{
+    font-family: "Century Gothic";
+    padding: 50px;
+    background-color:#121720;
+}
+
+.overlay {
+    position: absolute;
+    display: inline;
+    width: 2000px;
+    height: 2000px;
+}
+
+.tusks {
+    position: absolute;
+    width: 1297.3px;
+    height: 1100px;
+    z-index: 0;
+}
+
+
+ul {
+    font-size: 23pt;
+    position: absolute;
+    top: 255px;
+    left: 160px;
+    z-index: 1;
+    color: #7d96a0;
+    padding: 10px;
+}
+.rect1 {
+    position: absolute;
+    fill: #614150;
+/*    fill: rgb(142, 86, 125);*/
+    top: 200px;
+    right: 400px;
+    z-index: -1;
+}
+
+button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    color: #7d96a0;
+    z-index: 1;
+}
+
+button:hover {
+/*    background: #938b5e;*/
+    color: #614150;
+}
+
+/*
+button:visited {
+    color:maroon;
+}
+*/
+
+.rect2 {
+    position: absolute;
+    fill: #614150;
+/*    fill: rgb(142, 86, 125);*/
+    top: 800px;
+    right: 800px;
+    z-index: -1;
+}
+
+.rect3 {
+    position: absolute;
+    fill: #614150;
+/*    fill: rgb(142, 86, 125);*/
+    top: 800px;
+    right: 800px;
+    z-index: -1;
+}
